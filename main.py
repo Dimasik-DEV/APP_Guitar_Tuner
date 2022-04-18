@@ -2,15 +2,21 @@
 # Мобильное приложение "Гитарный Тюнер" #
 #########################################
 
-import kivy
+from kivymd.app import MDApp
+from kivy.core.window import Window  # Размер окна под Windows
 
-from kivy.app import App
-from kivy.uix.button import Button
+from classes.CreateApp import CreateApp
+
+Window.size = (270, 585)
 
 
-class MyApp(App):
+class MainApp(MDApp):
+
     def build(self):
-        return Button(text='Hello World')
+
+        app = CreateApp()
+        return app.get_top_screen()
 
 
-MyApp().run()
+if __name__ == '__main__':
+    MainApp().run()

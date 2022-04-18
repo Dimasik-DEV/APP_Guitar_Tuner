@@ -1,0 +1,61 @@
+#:kivy 2.1.0
+
+<SettingScreen>:
+    name: 'setting'
+
+    MDLabel:
+        text: 'Настройки'
+        halign: 'center'
+
+    ScrollView:
+
+        MDList:
+
+            TwoLineIconListItem:
+                text: 'Выбор инструмента'
+                secondary_text: 'Текущий инструмент: ...'
+
+                IconLeftWidget:
+                    icon: "icons/setting/instrument.png"
+
+            TwoLineIconListItem:
+                text: 'Изменение строя'
+                secondary_text: 'Текущий строй: ...'
+
+                IconLeftWidget:
+                    icon: "icons/setting/formation.png"
+
+            TwoLineIconListItem:
+                text: 'Элементы интерфейса'
+                secondary_text: 'Частота, название и индикация ноты'
+
+                IconLeftWidget:
+                    icon: ""
+
+            TwoLineIconListItem:
+                text: 'Тема интерфейса'
+                secondary_text: 'Текущая тема: ...'
+
+                IconLeftWidget:
+                    icon: ""
+
+            TwoLineIconListItem:
+                text: 'Язык интерфейса'
+                secondary_text: 'Текущий язык: ...'
+
+                IconLeftWidget:
+                    icon: ""
+
+            TwoLineIconListItem:
+                text: 'Информация о приложении'
+                secondary_text: 'Назначение, версия, разработчик'
+
+                IconLeftWidget:
+                    icon: ""
+
+            TwoLineIconListItem:
+                text: 'Назад'
+                secondary_text: ''
+
+                IconLeftWidget:
+                    icon: ""
